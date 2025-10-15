@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Kranky&family=Oswald:wght@200..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+}
+
+.header-content,
+main,
+footer {
+  padding: 0 4vw;
+}
+
+h1 {
+  font-family: "Kranky";
+  font-size: clamp(15px, 5vw, 154px);
+  font-weight: 400;
+  color: #8a0303;
+}
+
+h2 {
+  font-family: "Kranky";
+  font-size: clamp(11px, 4.2vw, 108px);
+  font-weight: 300;
+  color: #8a0303;
+}
+
+h3,
+.h3-red-text,
+.h3-white-text {
+  font-family: "Kranky";
+  font-size: clamp(7px, 2.5vw, 64px);
+  font-weight: 300;
+}
+
+.h3-white-text,
+.programs-blocks h3 {
+  color: #ffffff;
+}
+
+.h3-red-text,
+.plans-blocks h3 {
+  color: #8a0303;
+}
+
+a,
+p {
+  font-family: "Oswald";
+  font-size: clamp(4px, 1.5vw, 39px);
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.join-btn-big span {
+  font-family: "Kranky";
+  font-size: clamp(10px, 3vw, 90px);
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.join-btn-small span {
+  font-family: "Kranky";
+  font-size: clamp(8px, 2vw, 77px);
+  font-weight: 300;
+  color: #8a0303;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(18px, 0.7vh, 180px) 4vw;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  width: clamp(38px, 15vw, 384px);
+  height: auto;
+}
+
+.menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 6.5vw, 166px);
+}
+
+.menu a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: clamp(18px, 0.7vw, 180px);
+}
+
+.menu a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu a img {
+  width: clamp(8px, 3vw, 77px);
+  height: auto;
+}
+
+.header-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bg-img {
+  position: relative;
+  flex: 1;
+}
+
+#bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(70%);
+}
+
+.bg-img h1,
+.bg-img button {
+  position: relative;
+  z-index: 1;
+}
+
+.header-content h1:nth-of-type(1) {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+}
+
+.header-content h1:nth-of-type(2) {
+  position: absolute;
+  top: 25%;
+}
+
+.header-content h1:nth-of-type(3) {
+  position: absolute;
+  top: 43%;
+  right: 5%;
+}
+
+.header-content h1:nth-of-type(4) {
+  position: absolute;
+  top: 60%;
+}
+
+.header-content button {
+  position: absolute;
+  bottom: 3%;
+  right: 15%;
+}
+
+.join-btn-big {
+  background-image: url("../images/some.jpeg");
+  width: clamp(48px, 14vw, 486px);
+  height: auto;
+  border-radius: 60px;
+  background-size: cover;
+  background-position: 2%;
+  filter: brightness(70%);
+  border: 0.3vw solid black;
+  background-blend-mode: darken;
+}
+
+.join-btn-big:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.join-btn-big span {
+  filter: brightness(100%);
+}
+
+.specializations-blocks img {
+  width: 100px;
+  height: auto;
+}
+
+#messenger-icons img {
+  width: 20px;
+  height: auto;
+}

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+* {
+	padding: 0; 
+	/* встановлюємо внутрішній відступ для всіх елементів сайту на 0 */
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+
+header {
+	border: 1px solid blue;
+	height: 100vh; /*повна висота вікна браузера*/
+	background-image: url('../image/bg.jpg'); /*встановлюємо фонове зображення для блоку header*/
+	background-size: cover; /*розтягуємо фонове фото пропорціно по ширині і висоті блоку header*/
+	background-position: center; /*позиціонуємо фото по центру блоку header*/
+
+
+	position: relative;
+}
+
+.bg-img {
+	border: 2px solid red;
+	color: white;
+	text-align: center; /*вирівнюємо всі тексти в блоці з класом bg-img по середині*/
+
+	width: 100%;
+	height: 95%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	/*margin: 0 auto; 
+	margin-top: 150px;*/
+}
+
+.bg-img p {
+	margin: 30px 0;
+}
+
+h1 {
+	font-family: "Unbounded", sans-serif; /*додаємо кастомний шрифт до заголовку h1*/
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 1.4em; /*висота рядка*/
+	padding-top: 50px;
+}
+
+h2 {
+	font-family: "Great Vibes", cursive; /*додаємо інший кастомний шрифт до заголовків h2*/
+	font-size: 40px;
+}
+
+a {
+	text-decoration: none; /* знімаємо стандартні стилі з гіперпосилань, щоб можна було давати їм будь-який колір */
+	/*color: orange;*/
+}
+
+
+nav {
+	border: 1px solid red;
+	height: 60px; /*задаємо висоту блоку з навігацією*/
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; /*вирівнюємо флекс-елементи по центру (по висоті)*/
+	padding: 10px 20px;
+
+	position: fixed;
+	z-index: 20;
+	width: 98%;
+}
+
+h2	{padding-top: 120px;}
+
+.menu {
+	height: 100%;
+	/*border: 2px solid red;*/
+	display: flex;
+	align-items: center; 
+	/*gap: 40px;*/ /*відступ між флекс-елементами*/
+}
+
+.menu a {
+	height: 100%;
+	width: 110px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.menu a:hover {
+	color: brown;
+	background-color: yellow;
+	/*border: 1px solid #000;*/
+}
+
+.tel-header {margin-right: 20px;}
+
+ol, ul {
+	margin-left: 40px;
+}
+
+/*або :nth-child(odd) або :nth-child(2) або :first-child або :last-child */
+.menu a:nth-child(even) {  
+	color: red;
+}
+
+
+.my img {
+	width: 100px;
+}
+
+.my {
+	/*border: 2px solid blue;*/
+}
+
+.my-my {
+	/*border: 2px solid green;*/
+	width: 120px;
+	text-align: center; /* вирівнюємо текст по цетру блоку */
+	background-color: #123;
+}
+
+button {
+	background-color: white;
+	color: red;
+	padding: 16px 30px;
+	border-radius: 12px; /* встановлюємо заокруглення для кнопки */
+	font-size: 15px;
+	font-weight: 600; /* жирність тексту в кнопці, зазвичай від 200 до 800 */
+}
+
+button:hover { /* при наведенні на кнопку міняємо фон і колір тексту */
+	background-color: blue;
+	color: white;
+}
+
+.about-us img {
+	width: 20%; /* даємо розмір картинці 20% від розміру вікна браузера */
+}
+
+.services-img {
+		width: 200px; /* даємо розмір картинці 200px через додавання класу картинці */
+}
+
+
+.position-container {
+	position: relative;
+
+	width: 200px;
+	height: 300px;
+	background-color: #333;
+	margin: 20px auto;
+}
+
+.position-container div {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.position-one {
+	background-color: red;
+	top: -25px;
+	left: -25px;
+	/*border: 3px solid white;*/
+	z-index: 7;
+}
+
+.position-two {
+	background-color: blue;
+	top: -17px;
+	left: -17px;
+	z-index: 5;
+}
+
+.position-three {
+	background-color: green;
+	top: -10px;
+	left: -10px;
+	z-index: 4;
+}
+
+
+.myform {
+	margin-left: 50px;
+}
+
+.myform hr {width: 200px;}
+
+.myform input {
+	background-color: #999;
+	color: #fff;
+	padding: 12px;
+	/*width: 240px;*/
+	margin-bottom: 20px;
+}
+
+.myform textarea {
+	background-color: lightblue;
+	color: green;
+	/*resize: none;*/ /*заборона розтягуватись для textarea*/
+}
+
+.myform button {
+	background-color: orange;
+	padding: 12px 100px;
+}
+
+.form-header {
+	color: red;
+	margin: 10px 0;
+}
+
+
+
+
+
+/* медіа-запити - для адаптації під моб. пристрої */
+
+@media (max-width: 767px) {
+	nav {
+		flex-direction: column; /* міняємо вісь з горизонтальної на вертикальну */
+		align-items: center;
+	}
+
+	nav div {
+		background-color: yellow;
+		margin: 20px;
+	}
+
+	h1 {color: green; font-size: 20px;}
+
+	.my-my {height: 60px;}
+
+	button {
+		color: #aa22aa;
+		border-radius: 0; /* знімаємо заокруглення з кнопки */
+	}
+}
+
