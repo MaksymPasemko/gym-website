@@ -30,6 +30,9 @@ h2 {
   font-size: clamp(11px, 4.2vw, 108px);
   font-weight: 300;
   color: #8a0303;
+
+  text-align: center;
+  padding: 3.5vh;
 }
 
 h3,
@@ -80,6 +83,7 @@ header {
 }
 nav {
   height: 10vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,7 +131,7 @@ nav {
 
 .bg-img {
   position: relative;
-  flex: 1;
+  height: 90vh;
 }
 
 #bg-video {
@@ -189,14 +193,103 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.join-btn-big span {
-  filter: brightness(100%);
+#specialization {
+  position: relative;
+  display: flex;
+  height: 170vh;
+  border: 1px solid red;
+  flex-direction: column;
 }
 
-.specializations-blocks img {
-  width: 100px;
+#specialization-block-crossFit,
+#specialization-block-powerlifting,
+#specialization-block-strongman {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  width: fit-content;
+}
+
+#strongman-specialization-text p,
+#crossFit-specialization-text p,
+#powerlifting-specialization-text p {
+  text-align: left;
+}
+
+#crossFit-specialization-image,
+#powerlifter-specialization-image,
+#strongman-specialization-image {
+  width: clamp(150px, 25.5vw, 368px);
   height: auto;
 }
+
+#crossFit-specialization-text {
+  background-color: #330000;
+}
+
+#powerlifting-specialization-text {
+  background-color: #111f3b;
+}
+
+#crossFit-specialization-text,
+#powerlifting-specialization-text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.5vh 3vw;
+  gap: 0.7vh;
+}
+
+#strongman-specialization-text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.5vh 2vw;
+  gap: 0.7vh;
+  background-color: #330000;
+}
+
+#gym-description {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 1vw 1vw;
+  background-color: #111f3b;
+}
+
+#specialization-block-powerlifting {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+#specialization-block-strongman{
+  flex-direction: row-reverse;
+}
+
+/* #specialization-block-crossFit{
+} */
+
+#specialization-block-powerlifting{
+  position: absolute;
+  top: 14%;
+  right: 0;
+}
+
+#specialization-block-strongman{
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+
 
 #messenger-icons img {
   width: 20px;
