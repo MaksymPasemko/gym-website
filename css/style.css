@@ -77,8 +77,8 @@ p {
 }
 
 header {
-  height: 100vh;
   display: flex;
+  height: 100vh;
   flex-direction: column;
 }
 nav {
@@ -168,7 +168,7 @@ nav {
 
 .header-content h1:nth-of-type(4) {
   position: absolute;
-  top: 60%;
+  bottom: 0;
 }
 
 .header-content button {
@@ -196,8 +196,9 @@ nav {
 #specialization {
   position: relative;
   display: flex;
-  min-height: 110vh;
   flex-direction: column;
+  height: auto;
+  min-height: 120vh;
 }
 
 #specialization-block-crossFit,
@@ -263,23 +264,21 @@ nav {
   background-color: #111f3b;
 }
 
+#specialization-block-crossFit {
+  position: absolute;
+  top: 15%;
+}
+
 #specialization-block-powerlifting {
   flex-direction: row-reverse;
   align-items: flex-end;
-}
-
-#specialization-block-strongman {
-  flex-direction: row-reverse;
-}
-
-
-#specialization-block-powerlifting {
   position: absolute;
-  top: 9%;
+  top: 15%;
   right: 0;
 }
 
 #specialization-block-strongman {
+  flex-direction: row-reverse;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -294,4 +293,38 @@ nav {
 #messenger-icons img {
   width: 20px;
   height: auto;
+}
+
+@media (max-width: 1600px) {
+  #specialization {
+    min-height: 110vh;
+  }
+}
+
+@media (max-width: 1400px) {
+  #specialization {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 1250px) {
+  #specialization {
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 1050px) {
+  #specialization {
+    min-height: 80vh;
+  }
+}
+@media (max-width: 1050px) {
+  #specialization {
+    min-height: 80vh;
+  }
+}
+@media (max-height: 700px) {
+  #specialization {
+    min-height: 80vh;
+  }
 }
