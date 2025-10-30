@@ -30,7 +30,7 @@ h2 {
   font-weight: 300;
   color: #8a0303;
   text-align: center;
-  padding: 3.5vh;
+  margin: 5vh;
 }
 
 h3,
@@ -42,12 +42,12 @@ h3,
 }
 
 .h3-white-text,
-.programs-blocks h3 {
+.plans-blocks h3 {
   color: #ffffff;
 }
 
 .h3-red-text,
-.plans-blocks h3 {
+.programs-blocks h3 {
   color: #8a0303;
 }
 
@@ -181,13 +181,14 @@ nav {
 
 .join-btn-big {
   background-image: url("../images/some.jpeg");
-  width: clamp(48px, 14vw, 486px);
+  width: clamp(48px, 15vw, 486px);
   height: auto;
   border-radius: 60px;
   background-size: cover;
   background-position: 2%;
-  filter: brightness(70%);
+  background-color: rgba(0, 0, 0, 0.2);
   border: 0.3vw solid black;
+  padding: 0.3vh 0;
   background-blend-mode: darken;
 }
 
@@ -197,10 +198,8 @@ nav {
 
 #specialization {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  height: fit-content;
-  min-height: 700px;
+  height: auto;
 }
 
 #specialization-block-crossFit,
@@ -266,24 +265,23 @@ nav {
   background-color: #111f3b;
 }
 
-#powerlifting-crossFit{
+#powerlifting-crossFit {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5vh;
   align-items: flex-start;
 }
 
-#strongman-gym-description{
+#strongman-gym-description {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: flex-end;
 }
 
-#specialization-block-crossFit{
+#specialization-block-crossFit {
   margin-top: 4vh;
 }
-
 
 #specialization-block-powerlifting {
   flex-direction: row-reverse;
@@ -294,6 +292,72 @@ nav {
   flex-direction: row-reverse;
 }
 
+#programs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#programs-blocks-grid {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  align-items: stretch;
+  gap: 7vh 7vw;
+}
+
+.programs-blocks {
+  background-color: #111f3b;
+  width: 20vw;
+  height: auto;
+  border-radius: 40px;
+  padding: 1.7vh 2.3vw;
+}
+
+.programs-blocks h3 {
+  text-align: center;
+}
+
+.programs-blocks p {
+  text-align: left;
+}
+
+#program-block-powerlifting {
+  background-image: url("/images/powerlifting-programs-section.jpeg");
+}
+
+#program-block-strongman {
+  background-image: url("/images/strongman-programs-section.jpeg");
+}
+
+#program-block-crossFit {
+  background-image: url("/images/crossfit-programs-section.jpeg");
+}
+
+#program-block-strength-conditioning {
+  background-image: url("/images/strength-conditioning-programs-section.jpeg");
+}
+
+#program-block-night-warriors {
+  background-image: url("/images/night-programs-section.jpeg");
+}
+
+#program-block-recovery-mobility {
+  background-image: url("/images/stretching-programs-section.jpeg ");
+}
+
+#program-block-powerlifting,
+#program-block-strongman,
+#program-block-crossFit,
+#program-block-strength-conditioning,
+#program-block-night-warriors,
+#program-block-recovery-mobility {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+}
 
 
 
