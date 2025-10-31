@@ -30,7 +30,9 @@ h2 {
   font-weight: 300;
   color: #8a0303;
   text-align: center;
-  margin: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+
 }
 
 h3,
@@ -60,7 +62,12 @@ p {
   text-decoration: none;
 }
 
-.join-btn-big span {
+footer p{
+  font-size: 0.5vw;
+}
+
+.join-btn-big span,
+.join-btn-small span {
   font-family: "Kranky";
   font-size: clamp(10px, 3vw, 90px);
   font-weight: 300;
@@ -68,10 +75,7 @@ p {
 }
 
 .join-btn-small span {
-  font-family: "Kranky";
   font-size: clamp(8px, 2vw, 77px);
-  font-weight: 300;
-  color: #8a0303;
 }
 
 header {
@@ -179,7 +183,7 @@ nav {
   right: 15%;
 }
 
-.join-btn-big {
+.join-btn-big,.join-btn-small {
   background-image: url("../images/some.jpeg");
   width: clamp(48px, 15vw, 486px);
   height: auto;
@@ -324,27 +328,27 @@ nav {
 }
 
 #program-block-powerlifting {
-  background-image: url("/images/powerlifting-programs-section.jpeg");
+  background-image: url("../images/powerlifting-programs-section.jpeg");
 }
 
 #program-block-strongman {
-  background-image: url("/images/strongman-programs-section.jpeg");
+  background-image: url("../images/strongman-programs-section.jpeg");
 }
 
 #program-block-crossFit {
-  background-image: url("/images/crossfit-programs-section.jpeg");
+  background-image: url("../images/crossfit-programs-section.jpeg");
 }
 
 #program-block-strength-conditioning {
-  background-image: url("/images/strength-conditioning-programs-section.jpeg");
+  background-image: url("../images/strength-conditioning-programs-section.jpeg");
 }
 
 #program-block-night-warriors {
-  background-image: url("/images/night-programs-section.jpeg");
+  background-image: url("../images/night-programs-section.jpeg");
 }
 
 #program-block-recovery-mobility {
-  background-image: url("/images/stretching-programs-section.jpeg ");
+  background-image: url("../images/stretching-programs-section.jpeg ");
 }
 
 #program-block-powerlifting,
@@ -359,11 +363,76 @@ nav {
   background-blend-mode: darken;
 }
 
+#plans {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15vh;
+}
+
+#plans-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 3vw;
+}
+
+.plans-blocks {
+  flex: 1 1;
+  width: 17vw;
+  height: auto;
+  padding: 2vh 2vw 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111f3b;
+  gap: 3vh;
+}
+
+.plans-blocks h3,
+.plans-blocks p {
+  text-align: center;
+}
+
+.plan-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+
+#base-plan-block {
+  background-image: url("../images/base-pass.jpeg");
+}
+
+#warrior-plan-block {
+  background-image: url("../images/warrior-pass.jpeg");
+}
+
+#power-plan-block {
+  background-image: url("../images/power-pass.jpeg");
+}
+
+#base-plan-block,
+#warrior-plan-block,
+#power-plan-block {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+}
+
+.join-btn-small {
+  width: clamp(40px, 11vw, 350px);
+}
+
+.join-btn-small:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 
 
 #messenger-icons img {
   width: 20px;
   height: auto;
 }
-
-
