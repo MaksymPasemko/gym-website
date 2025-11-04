@@ -19,7 +19,7 @@ footer {
 
 h1 {
   font-family: "Kranky";
-  font-size: clamp(15px, 5vw, 154px);
+  font-size: clamp(35px,5vw, 154px);
   font-weight: 400;
   color: #8a0303;
 }
@@ -32,7 +32,6 @@ h2 {
   text-align: center;
   margin-top: 5vh;
   margin-bottom: 7vh;
-
 }
 
 h3,
@@ -56,14 +55,15 @@ h3,
 a,
 p {
   font-family: "Oswald";
-  font-size: clamp(4px, 1.5vw, 39px);
+  font-size: clamp(10px, 1.5vw, 39px);
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
 }
 
-footer p{
-  font-size: 0.5vw;
+footer p,
+footer a {
+  font-size: clamp(8px, 0.7vw, 35px);
 }
 
 .join-btn-big span,
@@ -92,7 +92,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: clamp(18px, 0.7vh, 180px) 4vw;
+  padding: 0.7vh 4vw;
 }
 
 #logo {
@@ -108,15 +108,14 @@ nav {
 .menu {
   height: 100%;
   display: flex;
-  align-items: center;
-  gap: clamp(16px, 6.5vw, 166px);
+  gap: 6.5vw;
 }
 
 .menu a {
   display: flex;
   height: 100%;
   align-items: center;
-  gap: clamp(18px, 0.7vw, 180px);
+  gap: 0.7vw;
 }
 
 .menu a:hover {
@@ -124,7 +123,7 @@ nav {
 }
 
 .menu a img {
-  width: clamp(8px, 3vw, 77px);
+  width: clamp(10px, 3vw, 77px);
   height: auto;
 }
 
@@ -146,7 +145,7 @@ nav {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  filter: brightness(70%);
+  filter: brightness(60%);
 }
 
 .bg-img h1,
@@ -183,7 +182,8 @@ nav {
   right: 15%;
 }
 
-.join-btn-big,.join-btn-small {
+.join-btn-big,
+.join-btn-small {
   background-image: url("../images/some.jpeg");
   width: clamp(48px, 15vw, 486px);
   height: auto;
@@ -314,9 +314,12 @@ nav {
 .programs-blocks {
   background-color: #111f3b;
   width: 20vw;
+  display: flex;
+  flex-direction: column;
   height: auto;
   border-radius: 40px;
   padding: 1.7vh 2.3vw;
+  gap: 1vh;
 }
 
 .programs-blocks h3 {
@@ -430,9 +433,50 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+footer {
+  height: 26vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/footer-background.jpeg);
+  background-size: 90%;
+  background-position: center 37%;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
 
+}
 
-#messenger-icons img {
-  width: 20px;
+#extra-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mail-icon,
+#phone-icon {
+  width: 1.5vw;
   height: auto;
 }
+
+footer a,footer p{
+  text-align: center;
+}
+
+#email a,#phone-number a{
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+}
+
+#messenger-icons{
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  gap: 1vw;
+}
+
+#messenger-icons img {
+  width: 5vw;
+  height: auto;
+}
+
