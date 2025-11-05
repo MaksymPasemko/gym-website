@@ -310,10 +310,8 @@ nav {
 }
 
 #programs-blocks-grid {
-  width: fit-content;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  place-items: center;
   align-items: stretch;
   gap: 7vh 7vw;
 }
@@ -323,7 +321,6 @@ nav {
   width: 20vw;
   display: flex;
   flex-direction: column;
-  height: auto;
   border-radius: 40px;
   padding: 1.7vh 2.3vw;
   gap: 1vh;
@@ -488,7 +485,6 @@ footer p {
   height: auto;
 }
 
-
 @media (max-width: 767px) {
   h1 {
     font-size: clamp(35px, 7vw, 154px);
@@ -506,12 +502,19 @@ footer p {
     font-size: clamp(20px, 3.5vw, 80px);
   }
 
+  .programs-blocks h3{
+    font-size: clamp(14px,3.5vw,80px);
+  }
   a {
     font-size: clamp(15px, 4vw, 39px);
   }
 
   p {
     font-size: clamp(11px, 3vw, 39px);
+  }
+
+  .programs-blocks p {
+    font-size: clamp(7px, 2.5vw, 20px);
   }
 
   nav {
@@ -630,11 +633,9 @@ footer p {
     gap: 4vh;
   }
 
-  #gym-description{
+  #gym-description {
     width: 70vw;
   }
-
-  
 
   #strongman-specialization-text p,
   #crossFit-specialization-text p,
@@ -643,5 +644,19 @@ footer p {
     letter-spacing: 0.3vw;
   }
 
- 
+  #programs-blocks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .programs-blocks p{
+    padding: 1vh 1.5vw;
+  }
+
+  .programs-blocks {
+  width: 35vw;
+  aspect-ratio: 1 / 1;
+  padding: 1vh 1vw;
+  gap: 0;
+}
+
 }
