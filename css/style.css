@@ -715,7 +715,7 @@ footer p {
 }
 }
 
-@media(max-width: 600px){
+@media(max-width: 650px){
   footer {
   height: 13vh;
   background-position: center 33%;
@@ -731,14 +731,14 @@ footer p {
 @media(max-width: 450px){
   footer {
   height: 11vh;
-  background-position: center 29%;
+  background-position: center 30%;
 }
 }
 
 @media(max-width: 372px){
   footer {
   height: 10vh;
-  background-position: center 28%;
+  background-position: center 29%;
 }
 }
 
