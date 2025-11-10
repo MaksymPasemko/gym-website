@@ -10,15 +10,10 @@ function hideSidebar(){
 
 function menuFlexSwitcher(e){
     const menu = document.querySelector(".menu")
-    if(e.matches){
-        menu.style.display = 'flex';
-    }
-    else{
-        menu.style.display = 'none';
-    }
-   
+    menu.style.display = e.matches ? 'flex' : 'none';
+
 }
 
-const mediaQuery = window.matchMedia('(min-width: 768px)');
+const mediaQuery = window.matchMedia('(min-width: 767px)');
 menuFlexSwitcher(mediaQuery);
 mediaQuery.addEventListener('change',menuFlexSwitcher);
