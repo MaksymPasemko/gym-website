@@ -1,15 +1,15 @@
+const menu = document.querySelector(".menu");
+const contactUsContainer = document.getElementById("contact-us-container");
+
 function showSidebar(){
-    const menu = document.querySelector(".menu");
     menu.style.display = 'flex';
 }
 
 function hideSidebar(){
-    const menu = document.querySelector(".menu");
     menu.style.display = 'none';
 }
 
 function menuFlexSwitcher(e){
-    const menu = document.querySelector(".menu")
     menu.style.display = e.matches ? 'flex' : 'none';
 
 }
@@ -19,11 +19,11 @@ menuFlexSwitcher(mediaQuery);
 mediaQuery.addEventListener('change',menuFlexSwitcher);
 
 function showContactUs(){
-    const contactUsContainer = document.getElementById("contact-us-container");
     contactUsContainer.style.display = 'flex';
+    menu.style.display = 'none';
 }
 
 function hideContactUs(){
-    const contactUsContainer = document.getElementById("contact-us-container");
     contactUsContainer.style.display = 'none';
+    menu.style.display = 'flex';
 }
