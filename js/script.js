@@ -14,6 +14,16 @@ function menuFlexSwitcher(e){
 
 }
 
-const mediaQuery = window.matchMedia('(min-width: 767px)');
+const mediaQuery = window.matchMedia('(min-width: 768px)');
 menuFlexSwitcher(mediaQuery);
 mediaQuery.addEventListener('change',menuFlexSwitcher);
+
+function showContactUs(){
+    const contactUsContainer = document.getElementById("contact-us-container");
+    contactUsContainer.style.display = 'flex';
+}
+
+function hideContactUs(){
+    const contactUsContainer = document.getElementById("contact-us-container");
+    contactUsContainer.style.display = 'none';
+}
