@@ -584,6 +584,11 @@ footer p {
   padding: 0.7vh 1.2vw;
   border-radius: 5px;
   align-self: center;
+  background-blend-mode: darken;
+}
+
+#submit-button:hover{
+  background-color: #330000;
 }
 
 @media (max-width: 1150px) {

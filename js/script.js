@@ -11,7 +11,6 @@ function hideSidebar(){
 
 function menuFlexSwitcher(e){
     menu.style.display = e.matches ? 'flex' : 'none';
-
 }
 
 const mediaQuery = window.matchMedia('(min-width: 768px)');
